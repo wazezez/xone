@@ -1,0 +1,101 @@
+@charset "utf-8";
+/*
+
+CSS FILE STRUCTURE
+
+The css is organized in multiple files following this structure:
+
+sass/ 
+| 
+|– base/ 				# the boilerplate of the project (typography, colors, normalize, etc.)
+| 
+|– components/			# all kind of small modules that appear across the site
+| 
+|– helpers/ 			# all Sass tools and helpers like variables, mixins, functions, etc.
+| 
+|– pages/				# page-specific styles
+| 
+|– vendors/				# all the CSS files from external libraries and frameworks
+| 
+ – app.scss				# primary Sass file 
+
+for more info check https://www.sitepoint.com/architecture-sass-project/
+
+*/
+
+// WARNING! The order of the imports affects the cascade, so if you change the order be aware that styles may be overwritten.
+
+/*
+// Vendors import
+*/
+@import "vendors/bootstrap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/*
+// Helpers import
+*/
+@import "helpers/utilities";
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/*
+// Base import
+*/
+@import "base/bootstrap-theming";
+@import "base/normalize";
+@import "base/resets";
+@import "base/color-palette";
+@import "base/typography";
+
+/*
+// Components import
+*/
+@import "components/benefit-card";
+@import "components/hero";
+@import "components/language-switcher";
+@import "components/plan-card";
+@import "components/question-card";
+@import "components/review-card";
+@import "components/social-card";
+@import "components/notifications";
+@import "components/modal";
+@import "components/menu";
+@import "components/authbox";
+/*
+// Section import
+*/
+@import "sections/about-program";
+@import "sections/benefits";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/payments";
+@import "sections/plans";
+@import "sections/promo-box";
+@import "sections/promo";
+@import "sections/reviews";
+@import "sections/socials";
+@import "sections/questions";
+
+/*
+// UI import
+*/
+@import "ui/button";
+@import "ui/input";
+@import "ui/textarea";
+@import "ui/checkbox";
+@import "ui/radio";
+@import "ui/table";
+@import "ui/label";
+/*
+// Pages import
+*/
+@import "pages/index";
+@import "pages/faq";
+@import "pages/history";
+@import "pages/premium";
+
+/*
+// Animations import
+*/
+@import "animations/glitch";

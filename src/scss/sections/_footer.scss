@@ -1,0 +1,109 @@
+.page-footer {
+    background-color: #DEE1FA;
+    padding-top: 37px;
+    padding-bottom: 25px;
+    &__logowrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width:$lg) {
+            justify-content: space-between;
+        }
+    }
+    &__logo {
+        margin-right: 70px;
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            margin-right: 10px;
+        }
+        img {
+            @media screen and (max-width:$md) {
+                max-width: 120px;
+            }
+        }
+    }
+    &__languages {
+
+    }
+    &__menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        @media screen and (max-width:$md) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin-top: 30px;
+        }
+        @media screen and (min-width:$md + 1) and (max-width:$lg) {
+            margin-top: 20px;
+            justify-content: flex-start;
+        } 
+        li {
+            & + li {
+                margin-left: 35px;
+                @media screen and (max-width:$md) {
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+            }
+            a {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+                letter-spacing: 0.01em;
+
+                color: #6C7092;
+                transition:0.3s ease color;
+                &:hover {
+                    text-decoration: none;
+                    color: darken(#6C7092,15%);
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding-top: 20px;
+        border-top: 1px solid #D0D5F8;
+        margin-top: 30px;
+    }
+    &__copy {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 143%;   
+        color: #9EA2C7;
+    }
+    &__design {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        @media screen and (max-width:$md) {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+        a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;            
+            text-align: right;
+            color: #9EA2C7;
+            span {
+                text-decoration-line: underline;
+                font-weight: 600;
+                color: #656985;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+

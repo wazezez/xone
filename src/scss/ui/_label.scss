@@ -1,0 +1,42 @@
+.label {
+    display: inline-block;
+    line-height: 35px;
+    padding: 0px 15px;
+    border-radius: 3px;
+    width: 110px;
+    text-align: center;
+    &--success {
+        background-color: #bbecd4;
+    }
+    &--warning {
+        background-color: #FFEACB;
+    }
+    &--error {
+        background-color: #F0CBCB;
+    }
+    &--premium {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        background-color: #FFAD32;
+        box-shadow: 0px 5px 35px rgba(255, 173, 50, 0.25);
+        border-radius: 4px;
+        white-space: nowrap;
+        line-height: 35px;
+        padding: 0px 15px;
+        width: auto;
+    }
+    &--price {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 35px;        
+        letter-spacing: 0.02em;        
+        color: #000000;
+        width: auto;      
+        background-color: #FFFFFF;
+        border-radius: 4px;
+    }
+}

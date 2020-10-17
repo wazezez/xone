@@ -1,0 +1,16 @@
+.questions-section {
+    padding-top: 99px;
+    padding-bottom: 88px;
+    @media screen and (max-width:$md) {
+        padding-bottom: 50px;
+    }
+    &__title {
+        margin-bottom: 86px;   
+        @media screen and (max-width:$md) {
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            margin-bottom: 60px;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.promo-section {
+    background: url('../images/promo-bg.png') 50% 50% no-repeat;
+    background-size: cover;
+    padding-top: 105px;
+    padding-bottom: 88px;
+    position: relative;
+    @media screen and (max-width:$md) {
+        padding-top: 0px;
+    }
+    &__images {
+        @media screen and (max-width:$md) {
+            text-align: center;
+        }
+        img {
+            position: absolute;
+            @media screen and (max-width:$md) {
+                max-width:100%;
+            }
+            @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+                max-width: 100%;
+            }
+            &:nth-of-type(1) {
+                bottom: 0px;
+                left: 26px;
+                @media screen and (max-width:$lg) {
+                    display: none;
+                }
+                @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+                    display: none;
+                }
+            }
+            &:nth-of-type(2) {
+                right: 584px;
+                top: -53px;
+                @media screen and (max-width:$lg) {
+                    display: none;
+                }
+            }
+            &:nth-of-type(3) {
+                bottom: 0px;
+                right: 24px;
+                @media screen and (max-width:$lg) {
+                    position: relative;
+                    margin-top: -100px;
+                    right: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media screen and (min-width:$md + 1) and (max-width:$lg) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    max-width: 50%;
+                    margin-top: 0px;
+                } 
+                
+                @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+                    margin-top: -100px;
+                    right: 0%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 59px;
+        color:#fff !important;
+        font-size: 28px  !important;
+        line-height: 34px  !important;
+        @media screen and (max-width:$md) {
+            font-size: 24px;
+        }
+        @media screen and (min-width:$md + 1) and (max-width:$lg) {
+            font-size: 26px;
+            margin-bottom: 30px; 
+        } 
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            margin-bottom: 30px;
+        }
+        
+        &:after {
+            color:#211732 !important;
+            text-shadow: rgba(218, 221, 244, 0.15) 0px 0px 1.5px,   rgba(218, 221, 244, 0.15) 0px 0px 1.5px,   rgba(218, 221, 244, 0.15) 0px 0px 1.5px,
+            rgba(218, 221, 244, 0.15) 0px 0px 1.5px,   rgba(218, 221, 244, 0.15) 0px 0px 1.5px,   rgba(218, 221, 244, 0.15) 0px 0px 1.5px !important;
+            opacity: .3 !important;
+            
+        }
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;        
+        text-align: center;        
+        color: #9B8BBF;
+        @media screen and (max-width:$md) {
+            font-size: 14px;
+        }
+        @media screen and (min-width:$md + 1) and (max-width:$lg) {
+            font-size: 16px;   
+        } 
+    }
+    &__action {
+        text-align: center;
+        margin-top: 46px;
+    }
+}

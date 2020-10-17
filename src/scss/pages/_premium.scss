@@ -1,0 +1,118 @@
+.premium-article {
+    margin-top: 64px;
+    .label--premium {
+        margin-bottom: 14px;
+        position: absolute;
+        top: -38px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+}
+
+.premium-list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    &__item {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        & + & {
+            margin-top: 30px;
+        }
+    }
+    &__icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #CE8800 10.74%, #FFBE5B 93.82%);
+        margin-right: 17px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &__hexagon {
+        position: relative;
+        width: 45px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;        
+        color: #000000;
+        transform: translate(-12px,0px);
+        display: block;
+        flex-shrink: 0;
+        margin: 0;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    &__content {
+
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        margin-bottom: 18px;        
+        letter-spacing: 0.02em;        
+        color: #FFFFFF;
+        position: relative;
+        @media screen and (max-width: $md) {
+            font-size: 14px;
+        }
+        &:after {
+            background-color: rgba(#fff,.15);
+            width: 25px;
+            height: 2px;
+            position: absolute;
+            bottom: -8px;
+            left: 0px;
+            content:'';
+        }
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;        
+        letter-spacing: 0.02em;        
+        color: #E1E8FF;        
+        opacity: 0.85;
+        @media screen and (max-width: $md) {
+            font-size: 13px;
+        }
+    }
+}
+
+.premium-box {
+    padding-bottom: 92px;
+    @media screen and (max-width: $md) {
+        margin-top: 30px;
+    }
+    &__checkbox {
+        margin-left: 52px;
+        margin-top: 33px;
+    }
+    &__action {
+        margin-left: 52px;
+        margin-top: 43px;
+    }
+    &__policy {
+        margin-top: 17px;
+        margin-left: 91px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: left;
+        
+        color: #FFFFFF;
+        
+        opacity: 0.35;
+    }
+}

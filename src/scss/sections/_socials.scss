@@ -1,0 +1,44 @@
+.socials-section {
+    padding-bottom: 133px;
+    @media screen and (max-width:$md) {
+        padding-bottom: 0px;
+    }
+    &__content {
+        margin-top: 18px;
+        @media screen and (min-width:$md + 1) and (max-width:$lg) {
+            margin-top: 0px;
+            margin-bottom: 30px; 
+        } 
+    }
+    &__title {
+        font-size: 28px !important;
+        line-height: 34px;
+        text-align: left !important;
+        margin-bottom: 54px;
+        &:after {
+            left: 58% !important;
+        }
+        
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            line-height: 1.3 !important;
+        }
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 133%;       
+        color: #ACB1D9;
+        p {
+            @media screen and (min-width:$md + 1) and (max-width:$lg) {
+                margin-bottom: 0;
+            } 
+            & + p {
+                @media screen and (min-width:$md + 1) and (max-width:$lg) {
+                    margin-top: 10px;  
+                } 
+            }
+        }
+    }
+}
+

@@ -1,0 +1,223 @@
+#toast-container {
+    position: fixed;
+    z-index: 999999;
+    width: 460px !important;
+    // background-color: #fff;
+    & > .toast-info,
+    & > .toast-error,
+    & > .toast-success,
+    & > .toast-warning {
+        background-image: none !important;
+    }
+    & > div {
+        position: relative;
+        overflow: hidden;
+        margin: 0 0 6px;
+        padding: 27px 27px 27px 103px;
+        width: 460px;
+        background-color: #fff;
+    }
+    .toast-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #000000;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        &:after {
+            width: 25px;
+            height: 2px;
+            background-color: #FFAD32;
+            bottom: -8px;
+            left: 0px;
+            position: absolute;
+            content:'';
+        }
+    }
+    .toast-message {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;        
+        color: #ADAFD0;
+    }
+}
+
+  .toast-close-button {
+    background: url('../images/svg/toast-close.svg') 50% 50% no-repeat transparent !important;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 27px;
+    right: 24px;
+    z-index: 100;
+    color:transparent;
+    opacity: .7;
+    transition: 0.3s ease opacity;
+  }
+  .toast-close-button:hover,
+  .toast-close-button:focus {
+    opacity:1;
+  }
+  /*Additional properties for button version
+   iOS requires the button element instead of an anchor tag.
+   If you want the anchor version, it requires `href="#"`.*/
+  button.toast-close-button {
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: none;
+  }
+  .toast-top-center {
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .toast-bottom-center {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .toast-top-full-width {
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .toast-bottom-full-width {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .toast-top-left {
+    top: 12px;
+    left: 12px;
+  }
+  .toast-top-right {
+    top: 12px;
+    right: 12px;
+  }
+  .toast-bottom-right {
+    right: 12px;
+    bottom: 12px;
+  }
+  .toast-bottom-left {
+    bottom: 12px;
+    left: 12px;
+  }
+
+  #toast-container.toast-top-center > div,
+  #toast-container.toast-bottom-center > div {
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #toast-container.toast-top-full-width > div,
+  #toast-container.toast-bottom-full-width > div {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .toast {
+    background: #FFFFFF;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+    &:after {
+        width: 56px;
+        height: 56px;
+        content:'';
+        top: 42px;
+        left: 26px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    &:before {
+        width: 24px;
+        height: 24px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 58px;
+        left: 42px;
+        content:'';
+    }
+  }
+  .toast-success {
+    &:after {
+        background-color: rgba(#27AE60,.12);
+    }
+    &:before {
+        background-image: url('../images/svg/toast-success.svg');
+    }
+  }
+  .toast-error {
+    &:after {
+        background-color: #F9E3E3;
+    }
+    &:before {
+        background-image: url('../images/svg/toast-error.svg');
+    }
+  }
+  .toast-info {
+    &:after {
+        background-color: #DAF3F9;
+    }
+    &:before {
+        background-image: url('../images/svg/toast-info.svg');
+    }
+  }
+  .toast-warning {
+    &:after {
+        background-color: #F9F0DA;
+    }
+    &:before {
+        background-image: url('../images/svg/toast-warning.svg');
+    }
+  }
+
+  
+  .toast-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #000000;
+    opacity: 0.4;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: alpha(opacity=40);
+  }
+  
+  /*Responsive Design*/
+  @media all and (max-width: 240px) {
+    #toast-container > div {
+      padding: 8px 8px 8px 50px;
+      width: 11em;
+    }
+    #toast-container .toast-close-button {
+      right: -0.2em;
+      top: -0.2em;
+    }
+  }
+  @media all and (min-width: 241px) and (max-width: 480px) {
+    #toast-container > div {
+      padding: 8px 8px 8px 50px;
+      width: 18em;
+    }
+    #toast-container .toast-close-button {
+      right: -0.2em;
+      top: -0.2em;
+    }
+  }
+  @media all and (min-width: 481px) and (max-width: 768px) {
+    #toast-container > div {
+      padding: 15px 15px 15px 50px;
+      width: 25em;
+    }
+  }
+  
+

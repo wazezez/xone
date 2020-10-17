@@ -1,0 +1,154 @@
+.custom-modal {
+    .premium-list {
+        &__item {
+
+        }
+        &__hexagon {
+
+        }
+        &__content {
+
+        }
+        &__title {
+            color: #000000;
+        }
+        &__description {
+            color: #9DA0C6;
+        }
+    }
+    .modal-dialog {
+
+    }
+    .modal-content {
+        
+    }
+    .modal-header {
+        padding: 42px 40px;
+        border: 0px;
+    }
+    .modal-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;       
+        color: #000000;
+        position: relative;
+        &:before {
+            background-color: #FFAD32;
+            width: 30px;
+            height: 3px;
+            content:'';
+            position: absolute;
+            bottom: -14px;
+            left: 0px;
+            z-index: 2;
+        }
+        &.title-outline {
+            &:after {
+                font-size: 42px;
+                line-height: 51px;
+                color:#fff;
+                top: -16px;
+                left: 54%;
+            }
+        }
+        &--center {
+            text-align: center;
+            width: 100%;
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &.title-outline {
+                &:after {
+                    left: 51%;
+                }
+            }
+        }
+    }
+    .modal-description {
+        margin-bottom: 50px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #9DA0C6;
+        
+    }
+    .modal-body {
+        padding: 0px 40px 35px 40px;
+    }
+    .close {
+        opacity: 1;
+    }
+
+}
+
+.subscribe-modal {
+    .plan-card {
+        margin:15px 0px;
+    }
+    .plan-card__description {
+        @media screen and (max-width:1499px) {
+            font-size: 14px;
+        }
+    }
+    .modal-lg {
+        @media screen and (min-width:576px) and (max-width:1199px) {
+            max-width: calc(100vw - 100px);
+        }       
+    }
+    .modal-description {
+        margin-bottom: 30px;
+    }
+    .modal-lg {
+        @media screen and (min-width:1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (min-width:1500px) {
+            max-width: 1450px;
+        }
+    }
+}
+
+.thanks-modal {
+    .modal-lg {
+        @media screen and (min-width:1200px) {
+            max-width: 1138px;
+        }
+    }
+}
+
+
+
+.account-data-card {
+    background-color: #F4F6FF;
+    border-radius: 12px;
+    padding: 38px 35px;
+    @media screen and (max-width:$lg){
+        margin-top: 30px;
+    }
+    &__item {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;        
+        color: #000;
+        height: 60px;
+        padding: 0px 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #E4E8FC;
+        box-shadow: 0px 5px 25px rgba(201, 208, 237, 0.25);
+        border-radius: 4px;
+        & + & {
+            margin-top: 23px;
+        }
+        span {
+            color: #B7BFE7;
+            margin-right: 10px;
+            display: inline-block;
+        }
+    }
+}

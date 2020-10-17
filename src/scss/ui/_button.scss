@@ -1,0 +1,49 @@
+button {
+    &:focus {
+        outline: 0px;
+    }
+}
+.button {
+    padding: 0px 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    position: relative;
+    border-radius: 4px;
+    background-color: $orange;
+    height: 60px;
+    border:0px;
+    outline:0px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    img,
+    .svg {
+        margin-left: 10px;
+    }
+    &:hover {
+        background-color: lighten($orange,5%);
+        text-decoration: none;
+        color:#000;
+    }
+    &:focus {
+        outline: 0px;
+        background-color: darken($orange,5%);
+    }
+    &:before {
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #7A5100 10.74%, #D79129 93.82%);
+        border-radius: 0px 0px 4px 4px;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        content:'';
+    }
+    s {
+        margin-left: 10px;
+        opacity: .25;
+    }
+}

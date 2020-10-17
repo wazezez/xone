@@ -1,0 +1,106 @@
+.input {
+    &[type="text"],
+    &[type="password"],
+    &[type=tel],
+    &[type=email] {
+        height: 70px;
+        display: block;
+        width: 100%;
+        background-color: #E8E9FF;
+        box-shadow: 0px 15px 65px -5px rgba(221, 224, 255, 0.45);
+        border-radius: 6px;
+        border:0px;
+        padding: 0px 25px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;        
+        color: #7B7EA9;
+        @media screen and (max-width: $sm) {
+            font-size: 14px;
+        }   
+        &::placeholder {
+            color: #CACBEA;
+        }
+        &:focus {
+            outline:0px;
+        }
+    }
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    & + & {
+        margin-top: 25px;
+    }
+    &--hexagon {
+        input {
+            &[type=text],
+            &[type=password],
+            &[type=email],
+            &[type=tel] {
+                padding-left: 76px;
+            }
+        }
+    }
+    &--password {
+        .show-password {
+            position: absolute;
+            padding: 0px 25px;
+            top: 0px;
+            right: 0px;
+            margin: 0;
+            border:0px;
+            outline: 0px;
+            height: 100%;
+            background-color: transparent;
+            .svg {
+                path {
+                    transition: 0.3s ease fill;
+                }
+            }
+            &:hover {
+                .svg {
+                    path {
+                        fill:#7B7EA9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.hexagon {
+    position: relative;
+    width: 45px; 
+    height: 25.98px;
+    background-color: #fbad28;
+    margin: 12.99px 0;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: center;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 22.5px solid transparent;
+        border-right: 22.5px solid transparent;
+        left: 0;
+    }
+    &:before {
+        bottom: 100%;
+        border-bottom: 12.99px solid #fbad28;
+    }
+      
+    &:after {
+        top: 100%;
+        width: 0;
+        border-top: 12.99px solid #fbad28;
+    }
+}

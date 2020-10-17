@@ -1,0 +1,138 @@
+.faq-section{
+    padding-top: 92px;
+    padding-bottom: 180px; 
+    @media screen and (max-width:$md) {
+        padding-top: 46px;
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width:$md + 1) and (max-width:$lg) {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    } 
+}
+
+.faq-navigation {
+    background: #FFFFFF;
+    box-shadow: 0px 35px 85px rgba(222, 225, 247, 0.65);
+    border-radius: 12px;
+    padding: 22px 0px;
+    margin: 0;
+    list-style: none;
+    @media screen and (max-width:$lg) {
+        margin-bottom: 50px;
+    }
+    li {
+        padding: 0px 32px;
+        position: relative;
+        &.active {
+            &:after {
+                width: 3px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                content:'';
+                background-color: #FFAD32;
+            }
+        }
+        &:last-of-type {
+            a {
+                border-bottom: 0px;
+            }
+        }
+        a {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 137%;            
+            letter-spacing: 0.02em;            
+            color: #121218;
+            text-decoration: none;
+            display: block;
+            padding: 22px 0px;
+            color: #959BC8;
+            border-bottom: 1px solid #F8F8FF;
+            transition: 0.3s ease color;
+            @media screen and (max-width:$md) {
+                font-size: 14px;
+            }
+            &:hover {
+                color: darken(#959BC8,10%);
+            }
+        }
+    }
+}
+
+.faq-accordion {
+    .card {
+        padding: 45px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 65px rgba(213, 217, 245, 0.65);
+        border-radius: 6px !important;
+        border:0px;
+        @media screen and (max-width:$md) {
+            padding: 25px;
+        }
+        & + .card {
+            margin-top: 25px;
+            @media screen and (max-width:$md) {
+                margin-top: 15px;
+            }
+        }
+        .card-header {
+            background-color: transparent;
+            border:0px;
+            padding: 0;
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;               
+                letter-spacing: 0.02em;
+                padding: 0;
+                color: #000000;
+                @media screen and (max-width:$md) {
+                    font-size: 14px;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+                img {
+                    transition: 0.3s ease transform;
+                    @media screen and (max-width:$md) {
+                        width: 18px;
+                    }
+                }
+                &[aria-expanded=true] {
+                 img {
+                     transform: rotate(180deg);
+                 }   
+                }
+            }
+        }
+        .card-body {
+            margin-top: 32px;
+            padding-top: 34px;
+            border-top: 1px solid #ECEDFF;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;            
+            letter-spacing: 0.02em;
+            color: #666D9E;
+            @media screen and (max-width:$md) {
+                font-size: 13px;
+                padding-top: 20px;
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,323 @@
+.plan-card {
+    background: #FFFFFF;
+    box-shadow: 0px 35px 65px rgba(213, 216, 237, 0.25);
+    border-radius: 6px;
+    position: relative;
+    padding: 70px 45px 39px 45px;
+    @media screen and (max-width:$lg) {
+        margin: 15px 0px;
+    }
+    &__ico {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 158px;
+        height: 158px;
+        border-radius:0px 6px 0px 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__dots {
+            img,
+            .svg {
+                &:first-of-type {
+                    position: absolute;
+                    top: -15px;
+                    left: 40px;
+                }
+                &:last-of-type {
+                    position: absolute;
+                    top: 39px;
+                    left: -22px;
+                }
+            }
+        }
+        &__inner {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.15);
+            position: relative;
+            &:after {
+                width: 71px;
+                height: 71px;
+                top: -8px;
+                left: -8px;
+                background-color: rgba(255, 255, 255, 0.45);
+                content:'';
+                border-radius: 50%;
+                position: absolute;
+            }
+            img {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+    &__time {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 43px;
+        line-height: 58%;    
+        color: #060609;
+        margin-bottom: 17px;
+        transition: 0.3s ease all;
+        transition-property: background-color,color;
+        position: relative;
+        z-index: 2;
+        span {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 179%;            
+            letter-spacing: 0.25em;            
+            color: #C8CBE3;
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+    &__cost {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 156%;        
+        letter-spacing: 0.05em;        
+        color: #000000;
+        padding: 12px 25px;
+        background-color: #EFEFFF;
+        box-shadow: 0px 5px 25px rgba(235, 235, 255, 0.25);
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 21px;
+        transition: 0.3s ease all;
+        transition-property: background-color,color;
+        position: relative;
+        z-index: 2;
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            font-size: 14px;
+        }
+
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156%;       
+        letter-spacing: 0.01em;        
+        color: #B7B7D3;
+        margin-bottom: 34px;
+        transition: 0.3s ease all;
+        transition-property: background-color,color;
+        position: relative;
+        z-index: 2;
+    }
+    // &__action {
+    //     .button {
+            
+    //     }
+    // }
+    &__waves {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    &__wave {
+        position: absolute;
+        top: 0;
+        right: 0;
+        &:nth-of-type(1) {
+            width: 205px;
+            height: 205px;            
+            opacity: 0.25;
+            border: 1px solid #D9DCF3;
+            box-sizing: border-box;
+            border-radius: 6px 0px 500px;
+            transform: rotate(90deg);
+        }
+        &:nth-of-type(2) {
+            width: 243px;
+            height: 243px;            
+            opacity: 0.25;
+            border: 1px solid #D9DCF3;
+            box-sizing: border-box;
+            border-radius: 6px 0px 500px;
+            transform: rotate(90deg);
+        }
+        &:nth-of-type(3) {
+            width: 277px;
+            height: 277px;            
+            opacity: 0.15;
+            border: 1px solid #D9DCF3;
+            box-sizing: border-box;
+            border-radius: 6px 0px 500px;
+            transform: rotate(90deg);
+        }
+    }
+
+    &--blueico & {
+        &__ico {
+            background: linear-gradient(180deg, #8811FE 0%, #50D4FE 100%);
+        }
+    }
+    &--orangeico & {
+        &__ico {
+            background: linear-gradient(180deg, #F29100 0%, #FED850 100%);
+        }
+    }
+    &--redico & {
+        &__ico {
+            background: linear-gradient(180deg, #E91F00 0%, #FF9052 100%);
+            &__inner {
+
+            }
+        }
+    }
+    &:hover {
+        background: linear-gradient(90deg, #CE8800 10.74%, #FFBE5B 93.82%);
+        box-shadow: 0px 35px 65px #F9B64F;
+        &:after,
+        &:before {
+            transform: translateY(-30px);
+        }   
+        .button {
+            color:#fff;
+            background-color: #000;
+            .svg {
+                path {
+                    fill:#fff;
+                }
+            }
+        }
+        .plan-card {
+            &__cost {
+                background: #060609;
+                box-shadow: 0px 12px 25px rgba(6, 6, 9, 0.25);
+                color:#fff;
+            }
+            &__description {
+                color:#fff;
+            }
+            &__time {
+                color:#fff;
+                span {
+                    color:#E0C085;
+                }
+            }
+        }
+        .firenades {
+            img {
+                &:first-of-type {
+                    top: -44px * 1.5;
+                    left: 31px * -1.5;
+                }
+                &:last-of-type {
+                    bottom: 81px * 1.5;
+                    right: -82px * 1.5;
+                }
+            }
+        }
+        .nades {
+            img {
+                &:first-of-type {
+                    top: 87px * 1.5;
+                    right: -39px * 1.5;
+                }
+                &:last-of-type {
+                    bottom: 66px * -1.5;
+                    left: -38px * 1.5;
+                }
+            }
+        }
+    }
+    &--transparent {
+        background-color: rgba(#000,.3); 
+        backdrop-filter: blur(5px);
+        @media screen and (max-width:$md) {
+            backdrop-filter: none;
+        }
+        .plan-card__time,
+        .plan-card__time span,
+        .plan-card__description {
+            color:#fff !important;
+        }
+        &:hover {
+            box-shadow: none;
+            border-color:#FFBE5B;
+            &:before {
+                opacity: 0;
+                transform: none;
+            }
+        }
+        &:before {
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            border: 5px solid rgba(#fff,.3);
+            background-color: transparent;
+            pointer-events: none;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            border-radius: 12px;
+            content:'';
+            opacity: 1;
+            transition: 0.3s ease opacity;
+        }
+    }
+}
+.nades {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    img {
+        transition: ease-in-out 0.3s all;
+        &:first-of-type {
+            position: absolute;
+            top: 87px;
+            right: -39px;
+        }
+        &:last-of-type {
+            bottom: 66px;
+            left: -38px;
+            position: absolute;
+        }
+    }
+}
+
+.firenades {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    img {
+        transition: ease-in-out 0.3s all;
+        &:first-of-type {
+            position: absolute;
+            top: -44px;
+            left: 31px;
+        }
+        &:last-of-type {
+            bottom: 81px;
+            right: -82px;
+            position: absolute;
+        }
+    }
+}

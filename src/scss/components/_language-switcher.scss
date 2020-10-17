@@ -1,0 +1,98 @@
+.lang-switcher {
+    border-radius: 4px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    background-color: #d5d8f6;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;   
+    color: #000000;
+    @media screen and (max-width:$md) {
+        font-size: 12px;
+        height: 40px;
+    }
+    &:hover {
+        background-color: darken(#d5d8f6,2%);
+    }    
+    &:after {
+        width: 16px;
+        height: 9px;
+        background: url('../images/svg/language-arrow.svg') 50% 50% no-repeat;
+        top: 50%;
+        // transform: translateY(-50%);
+        right: 15px;
+        content:'';
+        position: absolute;
+        transform: rotate(180deg) translateY(50%);
+        transition: 0.3s ease transform;
+    }
+    &--active {
+        &:after {
+            transform: rotate(0deg) translateY(-50%);
+        }
+    }
+    img {
+        width: 30px;
+        margin-right: 11px;
+        @media screen and (max-width:$md) {
+            width: 25px;
+        }
+    }
+    &__current {
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+
+        padding-right: 42px;
+        @media screen and (max-width:$md) {
+            padding-right: 25px;
+        }
+    }
+    &__list {
+        position: absolute;
+        width: 100%;
+        padding: 15px 0px;
+        background-color: darken(#d5d8f6,2%);
+        bottom: 140%;
+        left: 0px;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease all;
+        transition-property: opacity,transform;
+        border-radius: 4px;
+        @media screen and (max-width:$md) {
+            padding: 5px 0px;
+        }
+        &__item {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            line-height: 50px;
+            padding: 0px 15px;
+            @media screen and (max-width:$md) {
+                line-height: 40px;
+            }
+            & + & {
+                border-top: 1px solid #b8bfef;
+            }
+            &:hover {
+                text-decoration: none;
+                color:#000;
+                background-color: #bec2ea;
+            }
+        }
+        &--visible {
+            transform: translateY(15px);
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

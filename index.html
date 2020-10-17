@@ -1,0 +1,1247 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Skyarov Alexey">
+    <meta name="generator" content="Skyarov Alexey">
+    
+    <title>xOne Home</title>
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- https://stackoverflow.com/questions/4919076/outline-effect-to-text -->
+    <!-- https://tympanus.net/codrops/2017/12/21/css-glitch-effect/ -->
+    <div id="app">
+    <!-- Section -->
+    <section class="hero-section" id="hero-section">
+        <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+        </div>
+        <header class="hero-section__header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-5">
+                        <a href="/" title="Главная"><img src="/assets/images/svg/logo.svg" alt="xOne"></a>
+                    </div>
+                    <div class="col-lg-10 col-7">
+                        <div class="hero-section__nav">
+                            <ul class="hero-section__menu" id="hero-section__menu">
+                                <li class="hero-section__menu__li hero-section__menu__li--active"><a href="" data-toggle="modal" data-target="#instructionModal">Скачать</a></li>
+                                <li class="hero-section__menu__li"><a href="/plans.html">Тарифы</a></li>
+                                <li class="hero-section__menu__li"><a href="/faq.html">Помощь</a></li>
+                                <li class="hero-section__menu__li"><a href="/history.html">История</a></li>
+                                <li class="hero-section__menu__li"><a href="/promo.html">Promo</a></li>
+                            </ul>
+                            <div class="hero-section__account">
+                                <!-- Bars menu -->
+                                <button class="bars js-burger" id="touch-menu"  data-status="closed" data-toggle="#hero-section__menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <!-- /Bars menu -->
+                                <button class="hero-section__auth js-open-with-tab" data-toggle="modal" data-target="#authModal" data-open-tab="#login-tab">
+                                    <span>Войти</span> <img src="/assets/images/svg/ic-actions-user.svg" alt="Пользователь">
+                                </button>
+                                <button class="button hero-section__newacc js-open-with-tab" data-toggle="modal" data-target="#authModal" data-open-tab="#registration-tab">
+                                    Создать аккаунт <img src="/assets/images/svg/ic-actions-add-simple.svg" alt="Плюс">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero-section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <article class="hero-section__article" data-text="XONE">
+                            <div class="hero-section__article__image">
+                                <img src="/assets/images/hero-dinamite.png" alt="Динамит">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1>Легит. Аим. Вх. Скинченджер. Бхоп.</h1>
+                                </div>
+                                <div class="col-xl-6 col-lg-8">
+                                    <p>Интуитивный интерфейс, подсказки по функциям, русский язык и множество бесплатных конфигов.</p>
+                                    <p>Получайте преимущество над игроками без DLC и быстро апайте ранги !</p>
+                                    <button class="button hero-section__button" data-toggle="modal" data-target="#subscribeModal">
+                                        Скачать бесплатно для Windows
+                                        <img src="/assets/images/svg/ic-actions-download.svg" alt="Скачать">
+                                    </button>
+                                </div>
+                            </div>        
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hero-section__playbox">
+                            <div class="hero-section__play">
+                                <img src="/assets/images/svg/hero-play.svg" alt="Play">
+                                <svg id="radar-circle" class="radar-circle">
+                                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="0.4">
+                                      <animate attributeName="r" from="0" to="120" dur="6s" repeatCount="indefinite" begin="0.25s" />
+                                    </circle>
+                                    
+                                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="0.4">
+                                      <animate attributeName="r" from="0" to="120" dur="6s" repeatCount="indefinite" begin="1.25s" />
+                                    </circle>
+                                    
+                                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="0.4">
+                                      <animate attributeName="r" from="0" to="120" dur="6s" repeatCount="indefinite" begin="2.25s" />
+                                    </circle>
+                                    
+                                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="0.4">
+                                      <animate attributeName="r" from="0" to="120" dur="6s" repeatCount="indefinite" begin="3.25s" />
+                                    </circle>
+                                    
+                                    <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="0.4">
+                                      <animate attributeName="r" from="0" to="120" dur="6s" repeatCount="indefinite" begin="4.25s" />
+                                    </circle>
+                                  </svg>
+                            </div>
+                            <div class="hero-section__playbox__description">
+                                Обзор чита
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="about-program" id="about-program">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="about-program__title section-title title-outline" data-text="About">
+                        <span>О Программе</span>
+                        <div class="title-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-program__poster">
+                        <img src="/assets/images/app-snapshot.png" alt="Окно программы">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-program__content">
+                        <div class="about-program__subtitle">
+                            Бесплатная версия XONE
+                        </div>
+                        <div class="about-program__description">
+                            <p>Как говорил Стив Джобс: "Хорошая реклама образовывает людей, только и всего. Невозможно одурачить людей в этом бизнесе. Продукты говорят сами за себя".
+                            <p>Мы предоставляем пробный период всем желающим пользователям, только так каждый из вас сможет проверить качество нашего продукта.</p>
+                            <p>Несколько простых действий и пробный период ваш!</p>
+                        </div>
+                        <div class="about-program__action">
+                            <button class="button">Попробовать бесплатно</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="benefits-section" id="benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="benefits-section__title section-title title-outline" data-text="Benefits">
+                        <span>Преимущества</span>
+                        <div class="title-line"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Поиск игр <br>по платформам
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Находите интересующие
+                                вас игры, которые упоминались.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Поиск блогеров <br>по играм
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Мы позволяем искать блогеров
+                                по различным критериям
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Поиск видео <br>по играм
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Мы позволяем искать блогеров
+                                по различным критериям
+                            </div>
+                        </div>
+                        <div class="benefit-card__smile">
+                            <img src="/assets/images/smiles.png" alt="Смайл">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Рейтинг игр<br> по упоминаниям
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Находите интересующие
+                                вас игры, которые упоминались.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Определение <br>роста упоминаний
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Мы позволяем искать блогеров
+                                по различным критериям
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="benefit-card cards-behind">
+                        <div class="benefit-card__ico">
+                            <img src="/assets/images/svg/credit-card.svg" alt="Карта">
+                        </div>
+                        <div class="benefit-card__content">
+                            <div class="benefit-card__title">
+                                Создание подборки <br>блогеров
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="benefit-card__description">
+                                Мы позволяем искать блогеров
+                                по различным критериям
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits-section__circles">
+            <img src="/assets/images/svg/benefit-waves.svg" alt="Волны">
+        </div>
+        <div class="benefits-section__wave">
+            <svg viewbox="0 0 100 25">               
+                <path fill="#eef0fe" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+            </svg>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="plans-section" id="plans-section">
+        <div class="plans-section__dimanites">
+            <img src="/assets/images/dinamite-1.png" alt="Динамит"  class="rellax" data-rellax-speed="-1">
+            <img src="/assets/images/dinamite-2.png" alt="Динамит" class="rellax" data-rellax-speed="-1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="plans-section__title title-outline section-title" data-text="Стоимость">
+                        <span>Тарифы</span>
+                        <div class="boxes"></div>
+                        <div class="title-line"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="plan-card cards-behind plan-card--orangeico">
+                        <div class="plan-card__ico">
+                            <div class="plan-card__ico__inner">
+                                <img src="/assets/images/svg/ic-contact-time.svg" alt="Контакты">
+                                <div class="plan-card__ico__dots">
+                                    <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки" class="svg">
+                                    <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки" class="svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-card__time">
+                            72 <span>часа</span>
+                        </div>
+                        <div class="plan-card__cost">За 1 рубль</div>
+                        <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                        <div class="plan-card__action">
+                            <a href="" class="button">
+                                Оформить подписку за 1 руб.
+                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                            </a>
+                        </div>
+                        <div class="nades">
+                            <img src="/assets/images/nade-1.png" alt="Граната">
+                            <img src="/assets/images/nade-2.png" alt="Граната">
+                        </div>
+                        <div class="plan-card__waves">
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4">
+                    <div class="plan-card cards-behind plan-card--blueico">
+                        <div class="plan-card__ico">
+                            <div class="plan-card__ico__inner">
+                                <img src="/assets/images/svg/ic-actions-calendar.svg" alt="Календарь">
+                                <div class="plan-card__ico__dots">
+                                    <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки" class="svg">
+                                    <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки" class="svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-card__time">
+                            30 <span>дней</span>
+                        </div>
+                        <div class="plan-card__cost">За 149 рублей</div>
+                        <div class="plan-card__description">Целый месяц вы сможете играть с нашим читом. Круто же, правда ?</div>
+                        <div class="plan-card__action">
+                            <a href="" class="button">
+                                Оформить подписку за 149 руб.
+                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                            </a>
+                        </div>
+                        <div class="plan-card__waves">
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4">
+                    <div class="plan-card cards-behind plan-card--redico">
+                        <div class="plan-card__ico">
+                            <div class="plan-card__ico__inner">
+                                <img src="/assets/images/svg/ic-weather-umbrella.svg" alt="Зонт">
+                                <div class="plan-card__ico__dots">
+                                    <img src="/assets/images/svg/plan-redico-box-top.svg" alt="Точки" class="svg">
+                                    <img src="/assets/images/svg/plan-redico-box-bottom.svg" alt="Точки" class="svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-card__time">
+                            365 <span>дней</span>
+                        </div>
+                        <div class="plan-card__cost">За 1490 рублей</div>
+                        <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                        <div class="plan-card__action">
+                            <a href="" class="button">
+                                Оформить подписку за 1490 руб.
+                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                            </a>
+                        </div>
+                        <div class="firenades">
+                            <img src="/assets/images/firenade-1.png" alt="Коктейль Молотова">
+                            <img src="/assets/images/firenade-2.png" alt="Коктейль Молотова">
+                        </div>
+                        <div class="plan-card__waves">
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                            <div class="plan-card__wave"></div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="promo-section" id="promo-section">
+        <div class="promo-section__images">
+            <img src="/assets/images/promo-image-1.png" alt="Девушка">
+            <img src="/assets/images/promo-image-2.png" alt="Керамбит">
+            <img src="/assets/images/promo-image-3.png" alt="Девушки">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="promo-section__title section-title title-outline" data-text=Completely>
+                        <span>Попробуйте прямо сейчас, совершенно бесплатно!</span>
+                        <div class="title-line"></div>
+                    </div>
+                </div>
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                    <div class="promo-section__description">
+                        Как говорил Стив Джобс: "Хорошая реклама образовывает людей, только и всего. Невозможно одурачить людей в этом бизнесе. Продукты говорят сами за себя".
+                    </div>
+                    <div class="promo-section__action">
+                        <button class="button">
+                            Попробовать бесплатно
+                            <img src="/assets/images/svg/arrow-right.svg" alt="Вперед">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="questions-section" id="questions-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="questions-section__title title-outline section-title" data-text="Why we?">
+                        <span>Почему мы?</span>
+                        <div class="title-line"></div>
+                        <div class="boxes"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="question-card">
+                        <div class="question-card__ico">
+                            <img src="/assets/images/svg/q_star.svg" alt="Звезда">
+                        </div>
+                        <div class="question-card__title">
+                            Определение роста упоминаний
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="question-card__description">
+                            Мы позволяем искать блогеров по различным критериям
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="payments-section" id="payments-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="payments-section__box">
+                        <div class="row align-items-center">
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="payments-section__list">
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/yad.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/webmoney-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/webmoney.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/tele2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/qiwi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/mts.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                   <!-- Payment Item -->
+                                   <div class="payments-section__list__item">
+                                    <div class="payment-circle">
+                                        <img src="/assets/images/payments/megafon.png" alt="">
+                                    </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/cards.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/bitcoin.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                    <!-- Payment Item -->
+                                    <div class="payments-section__list__item">
+                                        <div class="payment-circle">
+                                            <img src="/assets/images/payments/beeline.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- /Payment Item -->
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="payments-section__content">
+                                    <div class="payments-section__title">
+                                        Множество способов пополнения баланса.
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="payments-section__description">
+                                        Оплачивайте Тарифы <br> любым удобным способом.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="reviews-section" id="reviews-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="reviews-section__title title-outline section-title" data-text="Reviews">
+                        <span>Отзывы</span>
+                        <div class="title-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="reviews-section__sliderwrap">
+                        <div class="reviews-section__slidernav">
+                            <button class="js-slider-prev" data-slider="#reviews-slider">
+                                <img src="/assets/images/svg/slider-arrow-prev.svg" alt="Назад" class="svg">
+                            </button>
+                            <button class="js-slider-next" data-slider="#reviews-slider">
+                                <img src="/assets/images/svg/slider-arrow-next.svg" alt="Вперед" class="svg">
+                            </button>
+                        </div>
+                        <div class="reviews-slider" id="reviews-slider">
+                            <div class="reviews-slider__item">
+                                <!-- Review -->
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__ico">
+                                            <img src="/assets/images/svg/ic-contact-message.svg" alt="Комментарий">
+                                        </div>
+                                        <div class="review-card__about">
+                                            <div class="review-card__author">Василий Дилдяков</div>
+                                            <div class="review-card__rating">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star.svg" alt="Звезда">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>Ценообразование нашего магазина - дело индивидуальное.</p>
+                                        <p>Если где-то проходит акция, то необязательно, что она у нас тоже будет. Но тем не менее, почти все наши товары круглогодично имеют значительную скидку на товар, чем не каждый магазин может похвастаться.</p>
+                                    </div>
+                                </div>
+                                <!-- /Review -->
+                            </div>
+                            <div class="reviews-slider__item">
+                                <!-- Review -->
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__ico">
+                                            <img src="/assets/images/svg/ic-contact-message.svg" alt="Комментарий">
+                                        </div>
+                                        <div class="review-card__about">
+                                            <div class="review-card__author">Василий Дилдяков</div>
+                                            <div class="review-card__rating">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star.svg" alt="Звезда">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>Ценообразование нашего магазина - дело индивидуальное.</p>
+                                        <p>Если где-то проходит акция, то необязательно, что она у нас тоже будет. Но тем не менее, почти все наши товары круглогодично имеют значительную скидку на товар, чем не каждый магазин может похвастаться.</p>
+                                    </div>
+                                </div>
+                                <!-- /Review -->
+                            </div>
+                            <div class="reviews-slider__item">
+                                <!-- Review -->
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__ico">
+                                            <img src="/assets/images/svg/ic-contact-message.svg" alt="Комментарий">
+                                        </div>
+                                        <div class="review-card__about">
+                                            <div class="review-card__author">Василий Дилдяков</div>
+                                            <div class="review-card__rating">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star.svg" alt="Звезда">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>Ценообразование нашего магазина - дело индивидуальное.</p>
+                                        <p>Если где-то проходит акция, то необязательно, что она у нас тоже будет. Но тем не менее, почти все наши товары круглогодично имеют значительную скидку на товар, чем не каждый магазин может похвастаться.</p>
+                                    </div>
+                                </div>
+                                <!-- /Review -->
+                            </div>
+                            <div class="reviews-slider__item">
+                                <!-- Review -->
+                                <div class="review-card">
+                                    <div class="review-card__header">
+                                        <div class="review-card__ico">
+                                            <img src="/assets/images/svg/ic-contact-message.svg" alt="Комментарий">
+                                        </div>
+                                        <div class="review-card__about">
+                                            <div class="review-card__author">Василий Дилдяков</div>
+                                            <div class="review-card__rating">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star-active.svg" alt="Звезда">
+                                                <img src="/assets/images/svg/star.svg" alt="Звезда">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-card__content">
+                                        <p>Ценообразование нашего магазина - дело индивидуальное.</p>
+                                        <p>Если где-то проходит акция, то необязательно, что она у нас тоже будет. Но тем не менее, почти все наши товары круглогодично имеют значительную скидку на товар, чем не каждый магазин может похвастаться.</p>
+                                    </div>
+                                </div>
+                                <!-- /Review -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="socials-section" id="socials-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="socials-section__content">
+                        <div class="socials-section__title section-title title-outline" data-text="GO HELL">
+                            <span>Двигайтесь с нами!</span>
+                            <div class="title-line title-line--left"></div>
+                        </div>
+                        <div class="socials-section__description">
+                            <p>Следи за развитиемнашего проекта в соц. сетях.</p>
+                            <p>Если у тебя есть интересные идеи, не стесняйся написать нам!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-4 col-4">
+                            <a href="" target="_blank" class="social-card social-card--discord">
+                                <img src="/assets/images/svg/discord.svg" alt="Discord">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-4">
+                            <a href="" target="_blank" class="social-card social-card--vk">
+                                <img src="/assets/images/svg/vk-logo.svg" alt="VK">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-4">
+                            <a href="" target="_blank" class="social-card social-card--youtube">
+                                <img src="/assets/images/svg/youtube-logo.svg" alt="Youtube">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="social-card social-card--wide social-card--discord">
+                                <!-- <div class="social-card__logo">
+                                    <img src="" alt="Discord">
+                                </div> -->
+                                <div class="social-card__content">
+                                    <div class="social-card__title">Предложи!</div>
+                                    <div class="social-card__description">Есть идеи как улучшить проект?<br> Мы уже ждем !</div>
+                                </div>
+                                <div class="social-card__content">
+                                    <div class="social-card__title">Поможем</div>
+                                    <div class="social-card__description">Возникли проблемы?<br> Не стесняйся и напиши нам.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="promo-box" id="promo-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="promo-box__inner">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="promo-box__poster">
+                                    <img src="/assets/images/footer-banner-img.png" alt="Баннер">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="promo-box__content">
+                                    <div class="promo-box__title">
+                                        Попробуйте прямо сейчас!
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="promo-box__description">
+                                        Совершенно бесплатно, установите наш софт, и окунитесь в мир крутых скинов, и нагибайте врагов как никогда раньше!
+                                    </div>
+                                    <div class="promo-box__action">
+                                        <button class="button">Попробовать бесплатно</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-box__knifes">
+                            <img src="/assets/images/promobox-knife-1.png" alt="Нож">
+                            <img src="/assets/images/promobox-knife-2.png" alt="Нож">
+                            <img src="/assets/images/promobox-knife-3.png" alt="Нож">
+                            <img src="/assets/images/promobox-knife-4.png" alt="Нож">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Section -->
+    <section class="page-footer" id="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="page-footer__logowrap">
+                        <div class="page-footer__logo">
+                            <img src="/assets/images/svg/logo_footer.svg" alt="Логотип">
+                        </div>
+                        <div class="page-footer__languages">
+                            <div class="lang-switcher">
+                                <div class="lang-switcher__current">
+                                    <img src="/assets/images/svg/flags/ru.svg" alt="RU">
+                                    Русский
+                                </div>
+                                <div class="lang-switcher__list">
+                                    <!-- Language -->
+                                    <a href="#" class="lang-switcher__list__item">
+                                        <img src="/assets/images/svg/flags/gb.svg" alt=""> Английский
+                                    </a>
+                                    <!-- /Language -->
+                                    <!-- Language -->
+                                    <a href="#" class="lang-switcher__list__item">
+                                        <img src="/assets/images/svg/flags/es.svg" alt=""> Испанский
+                                    </a>
+                                    <!-- /Language -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="page-footer__menu">
+                        <li><a href="" title="Контакты">Контакты</a></li>
+                        <li><a href="" title="Помощь">Помощь</a></li>
+                        <li><a href="" title="Условия использования">Условия использования</a></li>
+                        <li><a href="" title="Пользовательское соглашение">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-footer__bottom">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="page-footer__copy">
+                                    Copyright xone.fun 2020
+                                </div>
+                            </div>
+                            <div class="col-lg-2 offset-lg-7 col-md-6">
+                                <div class="page-footer__design">
+                                    <a href="" target="_blank" rel="nofollow">
+                                        Дизайн 一 <span>LARTS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title title-outline" data-text="AUTH">
+                        <span>Авторизация</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/assets/images/svg/cross-out.svg" alt="Закрыть" class="svg"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="auth-box">
+                            <div class="auth-box__action">
+                                <button class="js-auth-tab active" data-tab="#login-tab">Вход в аккаунт</button>
+                                <button class="js-auth-tab"  data-tab="#registration-tab">Регистрация</button>
+                            </div>
+                            <div class="auth-box__tabs">
+                                <!-- Tab -->
+                                <div class="auth-box__tab auth-box__tab--active" id="login-tab">
+                                    <form class="auth-box__form">
+                                        <div class="input-group input-group--hexagon input-group--user">
+                                            <div class="hexagon">
+                                                <img src="/assets/images/svg/user.svg" alt="Пользователь">
+                                            </div>
+                                            <input type="text" placeholder="Введите почту или логин" class="input">
+                                        </div>
+                                        <div class="input-group input-group--hexagon input-group--password">
+                                            <div class="hexagon">
+                                                <img src="/assets/images/svg/ic-security-locked.svg" alt="Замок">
+                                            </div>
+                                            <input type="password" placeholder="Пароль" class="input">
+                                            <button class="show-password">
+                                                <img src="/assets/images/svg/ic-actions-closed-view.svg" alt="Глаз" class="svg">
+                                            </button>
+                                        </div>
+                                        <button type="submit" class="button">
+                                            Войти в аккаунт
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- /Tab -->
+                                <!-- Tab -->
+                                <div class="auth-box__tab" id="registration-tab">
+                                    <form class="auth-box__form">
+                                        <div class="input-group input-group--hexagon input-group--user">
+                                            <div class="hexagon">
+                                                <img src="/assets/images/svg/user.svg" alt="Пользователь">
+                                            </div>
+                                            <input type="text" placeholder="Введите почту или логин" class="input">
+                                        </div>
+                                        <div class="input-group input-group--hexagon input-group--email">
+                                            <div class="hexagon">
+                                                <img src="/assets/images/svg/ic-contact-mail.svg" alt="Почта">
+                                            </div>
+                                            <input type="email" placeholder="Введите почту или логин" class="input">
+                                        </div>
+                                        <div class="input-group input-group--hexagon input-group--password">
+                                            <div class="hexagon">
+                                                <img src="/assets/images/svg/ic-security-locked.svg" alt="Замок">
+                                            </div>
+                                            <input type="password" placeholder="Пароль" class="input">
+                                            <button class="show-password">
+                                                <img src="/assets/images/svg/ic-actions-closed-view.svg" alt="Глаз" class="svg">
+                                            </button>
+                                        </div>
+                                        <button type="submit" class="button">
+                                            Создать аккаунт
+                                        </button>
+                                        
+                                    </form>
+                                </div>
+                                <!-- /Tab -->
+                            </div>
+                            <!-- <div class="auth-footer">
+                                <div class="auth-message">
+                                    Еще нет аккаунта?<br> <a href="#">Создать</a>
+                                </div>
+                            </div> -->
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal thanks-modal" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="instructionModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title title-outline" data-text="Thanks">
+                        <span>Спасибо за покупку!</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/assets/images/svg/cross-out.svg" alt="Закрыть" class="svg"></span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="modal-description">
+                                Оформите подписку и вы получите ссылкуна загрузку программы. Бла бла бла бла
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <ul class="premium-list">
+                                <!-- Item -->
+                                <li class="premium-list__item">
+                                    <div class="premium-list__hexagon hexagon">
+                                        01
+                                    </div>
+                                    <div class="premium-list__content">
+                                        <div class="premium-list__title">Скачайте наш софт себе на компьютер !</div>
+                                        <div class="premium-list__description">
+                                            Оформите подписку и вы получите ссылкуна загрузку программы. Бла бла бла бла
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Item -->
+                                <!-- Item -->
+                                <li class="premium-list__item">
+                                    <div class="premium-list__hexagon hexagon">
+                                        02
+                                    </div>
+                                    <div class="premium-list__content">
+                                        <div class="premium-list__title">Скачайте наш софт себе на компьютер !</div>
+                                        <div class="premium-list__description">
+                                            Оформите подписку и вы получите ссылкуна загрузку программы. Бла бла бла бла
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Item -->
+                                <!-- Item -->
+                                <li class="premium-list__item">
+                                    <div class="premium-list__hexagon hexagon">
+                                        03
+                                    </div>
+                                    <div class="premium-list__content">
+                                        <div class="premium-list__title">Скачайте наш софт себе на компьютер !</div>
+                                        <div class="premium-list__description">
+                                            Оформите подписку и вы получите ссылкуна загрузку программы. Бла бла бла бла
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Item -->
+                                <!-- Item -->
+                                <li class="premium-list__item">
+                                    <div class="premium-list__hexagon hexagon">
+                                        04
+                                    </div>
+                                    <div class="premium-list__content">
+                                        <div class="premium-list__title">Скачайте наш софт себе на компьютер !</div>
+                                        <div class="premium-list__description">
+                                            Оформите подписку и вы получите ссылкуна загрузку программы. Бла бла бла бла
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Item -->
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="account-data-card">
+                                <div class="account-data-card__item">
+                                    <span>Почта:</span> shenderro@gmail.com
+                                </div>
+                                <div class="account-data-card__item">
+                                    <span>Пароль:</span> sweeedoo227671
+                                </div>
+                                <button class="button hero-section__button">
+                                    Скачать бесплатно для Windows
+                                    <img src="/assets/images/svg/ic-actions-download.svg" alt="Скачать">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal subscribe-modal" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title title-outline modal-title--center" data-text="Subscribe">
+                        <span>Оформите подписку</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/assets/images/svg/cross-out.svg" alt="Закрыть" class="svg"></span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="modal-description text-center">
+                                Оформите подписку и вы получите ссылку <br>на загрузку программы. Бла бла бла бла
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="plan-card cards-behind plan-card--orangeico">
+                                <div class="plan-card__ico">
+                                    <div class="plan-card__ico__inner">
+                                        <img src="/assets/images/svg/ic-contact-time.svg" alt="Контакты">
+                                        <div class="plan-card__ico__dots">
+                                            <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки">
+                                            <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plan-card__time">
+                                    72 <span>часа</span>
+                                </div>
+                                <div class="plan-card__cost">За 1 рубль</div>
+                                <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                                <div class="plan-card__action">
+                                    <a href="" class="button">
+                                        Оформить за 1 руб.
+                                        <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина">
+                                    </a>
+                                </div>
+                                <div class="nades">
+                                    <img src="/assets/images/nade-1.png" alt="Граната">
+                                    <img src="/assets/images/nade-2.png" alt="Граната">
+                                </div>
+                                <div class="plan-card__waves">
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="plan-card cards-behind plan-card--blueico">
+                                <div class="plan-card__ico">
+                                    <div class="plan-card__ico__inner">
+                                        <img src="/assets/images/svg/ic-actions-calendar.svg" alt="Календарь">
+                                        <div class="plan-card__ico__dots">
+                                            <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки">
+                                            <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plan-card__time">
+                                    30 <span>дней</span>
+                                </div>
+                                <div class="plan-card__cost">За 149 рублей</div>
+                                <div class="plan-card__description">Целый месяц вы сможете играть с нашим читом. Круто же, правда ?</div>
+                                <div class="plan-card__action">
+                                    <a href="" class="button">
+                                        Оформить за 149 руб.
+                                        <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                                    </a>
+                                </div>
+                                <div class="plan-card__waves">
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="plan-card cards-behind plan-card--redico">
+                                <div class="plan-card__ico">
+                                    <div class="plan-card__ico__inner">
+                                        <img src="/assets/images/svg/ic-weather-umbrella.svg" alt="Зонт">
+                                        <div class="plan-card__ico__dots">
+                                            <img src="/assets/images/svg/plan-redico-box-top.svg" alt="Точки">
+                                            <img src="/assets/images/svg/plan-redico-box-bottom.svg" alt="Точки">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plan-card__time">
+                                    365 <span>дней</span>
+                                </div>
+                                <div class="plan-card__cost">За 1490 рублей</div>
+                                <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                                <div class="plan-card__action">
+                                    <a href="" class="button">
+                                        Оформить за 1490 руб.
+                                        <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                                    </a>
+                                </div>
+                                <div class="firenades">
+                                    <img src="/assets/images/firenade-1.png" alt="Коктейль Молотова">
+                                    <img src="/assets/images/firenade-2.png" alt="Коктейль Молотова">
+                                </div>
+                                <div class="plan-card__waves">
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                    <div class="plan-card__wave"></div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- /App -->
+
+    <script src="/assets/js/scripts.js"></script>
+    </body>
+</html>

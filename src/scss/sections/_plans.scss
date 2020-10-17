@@ -1,0 +1,73 @@
+.plans-section {
+    padding-top: 155px;
+    padding-bottom: 169px;
+    position: relative;
+    @media screen and (max-width:$md) {
+        overflow: hidden;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media screen and (min-width:$md + 1) and (max-width:$lg) {
+        padding-top: 80px;
+        padding-bottom: 100px; 
+    } 
+    @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    &__title {
+        margin-bottom: 83px;
+        @media screen and (max-width:$md) {
+            margin-bottom: 50px;
+        }
+        @media screen and (min-width:$md + 1) and (max-width:$lg) {
+            margin-bottom: 60px; 
+        } 
+        @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+            margin-bottom: 70px;
+        }
+    }
+    &__dimanites {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        @media screen and (max-width:$md) {
+            display: none;
+        }
+        img {
+            position: absolute;
+            &:first-of-type {
+                left: -250px;
+                top: -253px;
+                z-index: 9;
+                @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+                    transform: translateX(-30%);
+                    top: -300px;
+                }
+            }
+            &:last-of-type {
+                top: -200px;
+                right: 86px;
+                z-index: 9;
+                @media screen and (min-width: $xl + 1) and (max-width: 1600px) {
+                    right: -30px;
+                }
+                @media screen and (min-width:$md + 1) and (max-width:$lg) {
+                    right: -100px;
+                } 
+                @media screen and (min-width: $lg + 1) and (max-width: $xl) {
+                    right: -100px;
+                }
+            }
+        }
+    }
+}
+
+
+.plans-wrapper {
+    margin-top: 54px;
+
+}

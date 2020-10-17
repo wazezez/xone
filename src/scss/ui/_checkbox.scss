@@ -1,0 +1,65 @@
+.checkbox {
+	input[type=checkbox] {
+		-webkit-appearance: none;
+		width: 1px;
+		height: 1px;
+		pointer-events:none;
+		background-color: transparent;
+		opacity: 0;
+		&:checked {
+			& + label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+		&:disabled {
+			& + label {
+				opacity: .4;
+				pointer-events: none;
+			}
+		}
+	}
+	label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;        
+        color: #FFFFFF;
+		position: relative;
+        padding-left: 34px;
+        margin-bottom: 0;
+		&:before {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+			content:'';
+			position: absolute;
+			top: -6px;
+			left: 0;
+			width: 25px;
+			height: 25px;
+		}
+		&:after {
+			background: url('../images/svg/checkbox_tick.svg') 8px 8px rgba(255, 255, 255, 0.05) no-repeat;
+			height: 25px;
+			width: 25px;
+			content:'';
+			position: absolute;
+			top: -6px;
+			left: 0px;
+			opacity: 0;
+			transition:0.3s ease opacity;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		a {
+			color:#7063FD;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

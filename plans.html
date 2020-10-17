@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Skyarov Alexey">
+    <meta name="generator" content="Skyarov Alexey">
+    
+    <title>Тарифные планы — xOne</title>
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- https://stackoverflow.com/questions/4919076/outline-effect-to-text -->
+    <!-- https://tympanus.net/codrops/2017/12/21/css-glitch-effect/ -->
+    <!-- Section -->
+    <section class="hero-section hero-page" id="hero-section">
+        <header class="hero-section__header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-5">
+                        <a href="/" title="Главная"><img src="/assets/images/svg/logo.svg" alt="xOne"></a>
+                    </div>
+                    <div class="col-lg-10 col-7">
+                        <div class="hero-section__nav">
+                            <ul class="hero-section__menu" id="hero-section__menu">
+                                <li class="hero-section__menu__li"><a href="">Скачать</a></li>
+                                <li class="hero-section__menu__li hero-section__menu__li--active"><a href="/plans.html">Тарифы</a></li>
+                                <li class="hero-section__menu__li"><a href="/faq.html">Помощь</a></li>
+                                <li class="hero-section__menu__li"><a href="/history.html">История</a></li>
+                                <li class="hero-section__menu__li"><a href="/promo.html">Promo</a></li>
+                            </ul>
+                            <div class="hero-section__account">
+                                <!-- Bars menu -->
+                                <button class="bars js-burger" id="touch-menu"  data-status="closed" data-toggle="#hero-section__menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <!-- /Bars menu -->
+                                <button class="hero-section__auth">
+                                    <span>Войти</span> <img src="/assets/images/svg/ic-actions-user.svg" alt="Пользователь">
+                                </button>
+                                <button class="button hero-section__newacc" data-toggle="modal" data-target="#authModal">
+                                    Создать аккаунт <img src="/assets/images/svg/ic-actions-add-simple.svg" alt="Плюс">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero-section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <article class="hero-section__article hero-section__article--titlesmall" data-text="Plans">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1>Тарифы</h1>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Получайте преимущество над игрокамибез DLC и быстро апайте ранги !</p>
+                                </div>
+                            </div>        
+                        </article>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="plans-wrapper">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="plan-card plan-card--transparent plan-card--orangeico">
+                                        <div class="plan-card__ico">
+                                            <div class="plan-card__ico__inner">
+                                                <img src="/assets/images/svg/ic-contact-time.svg" alt="Контакты" >
+                                                <div class="plan-card__ico__dots">
+                                                    <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки" >
+                                                    <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__time">
+                                            72 <span>часа</span>
+                                        </div>
+                                        <div class="plan-card__cost">За 1 рубль</div>
+                                        <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                                        <div class="plan-card__action">
+                                            <a href="" class="button">
+                                                Оформить за 1 руб.
+                                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                                            </a>
+                                        </div>
+                                        <div class="nades">
+                                            <img src="/assets/images/nade-1.png" alt="Граната">
+                                            <img src="/assets/images/nade-2.png" alt="Граната">
+                                        </div>
+                                        <div class="plan-card__waves">
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="plan-card plan-card--transparent plan-card--blueico">
+                                        <div class="plan-card__ico">
+                                            <div class="plan-card__ico__inner">
+                                                <img src="/assets/images/svg/ic-actions-calendar.svg" alt="Календарь" >
+                                                <div class="plan-card__ico__dots">
+                                                    <img src="/assets/images/svg/plan-blueico-box-top.svg" alt="Точки" >
+                                                    <img src="/assets/images/svg/plan-blueico-box-bottom.svg" alt="Точки" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__time">
+                                            30 <span>дней</span>
+                                        </div>
+                                        <div class="plan-card__cost">За 149 рублей</div>
+                                        <div class="plan-card__description">Целый месяц вы сможете играть с нашим читом. Круто же, правда ?</div>
+                                        <div class="plan-card__action">
+                                            <a href="" class="button">
+                                                Оформить за 149 руб.
+                                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                                            </a>
+                                        </div>
+                                        <div class="plan-card__waves">
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="plan-card plan-card--transparent plan-card--redico">
+                                        <div class="plan-card__ico">
+                                            <div class="plan-card__ico__inner">
+                                                <img src="/assets/images/svg/ic-weather-umbrella.svg" alt="Зонт" >
+                                                <div class="plan-card__ico__dots">
+                                                    <img src="/assets/images/svg/plan-redico-box-top.svg" alt="Точки" >
+                                                    <img src="/assets/images/svg/plan-redico-box-bottom.svg" alt="Точки" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__time">
+                                            365 <span>дней</span>
+                                        </div>
+                                        <div class="plan-card__cost">За 1490 рублей</div>
+                                        <div class="plan-card__description">Мы спишем с вашей карты 1 рубль и вернём его обратно.</div>
+                                        <div class="plan-card__action">
+                                            <a href="" class="button">
+                                                Оформить за 1490 руб.
+                                                <img src="/assets/images/svg/ic-ecommerce-cart.svg" alt="Корзина" class="svg">
+                                            </a>
+                                        </div>
+                                        <div class="firenades">
+                                            <img src="/assets/images/firenade-1.png" alt="Коктейль Молотова">
+                                            <img src="/assets/images/firenade-2.png" alt="Коктейль Молотова">
+                                        </div>
+                                        <div class="plan-card__waves">
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                            <div class="plan-card__wave"></div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section -->
+
+    
+
+   
+
+    <script src="/assets/js/scripts.js"></script>
+    </body>
+</html>
